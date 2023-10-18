@@ -9,5 +9,4 @@
 <!-- -definire l'array di membri del team
   - aggiungere tutte le info
 -stampare le info su console 
-  -con ciclo for in 
 -stampare in pagina collegando il DOM  -->
