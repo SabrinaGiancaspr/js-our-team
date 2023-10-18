@@ -6,12 +6,12 @@ const teamMembers = [
   {
     nome: 'Wayne Barnett',
     ruolo: 'Founder & CEO',
-    foto: 'wayne-barnett-founder-ceo.jpg'
+    foto: 'wayne-barnett-founder-ceo.jpg',
   },
   {
     nome: 'Angela Caroll',
     ruolo: 'Chief Editor',
-    foto: ' angela-caroll-chief-editor.jpg',
+    foto: 'angela-caroll-chief-editor.jpg',
   },
   {
     nome: 'Walter Gordon',
@@ -21,7 +21,7 @@ const teamMembers = [
   {
     nome: 'Angela Lopez',
     ruolo: 'Social Media Manager',
-    foto: 'angela-lopez-social-media-manager.jpg',
+    foto: 'angela-caroll-chief-editor.jpg', 
   },
   {
     nome: 'Scott Estrada',
@@ -31,23 +31,23 @@ const teamMembers = [
   {
     nome: 'Barbara Ramos',
     ruolo: 'Graphic Designer',
-    foto: 'barbara-ramos-graphic-designer.jpg',
+    foto: 'barbara-ramos-graphic-designer.jpg'
   }
-
-]
+];
 
 
 //-stampare in pagina collegando il DOM 
-const teamInfoDomElement = document.getElementById('teaminfo')
+const teamInfoDomElement = document.getElementById('teaminfo');
 
 //creo ciclo for con template literal per stampare su pagina
 //ciclo for per la lunghezza dell'array
 for (let i = 0; i < teamMembers.length; i++) {
   //valore dell'elemento corrente dell'array
   const member = teamMembers[i];
+
   //template literal per sovrascrivere html
   const memberInfoHTMLString = ` <div class="card">
-                              <img src="${member.foto}" alt="">
+                              <img src="./img/${member.foto}" alt="">
                               <h2>${member.nome}</h2>
                               <p>${member.ruolo}</p>
                            </div> `;
