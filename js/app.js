@@ -41,12 +41,16 @@ const teamMembers = [
 const teamInfoDomElement = document.getElementById('teaminfo')
 
 //creo ciclo for con template literal per stampare su pagina
+//ciclo for per la lunghezza dell'array
 for (let i = 0; i < teamMembers.length; i++) {
+  //valore dell'elemento corrente dell'array
   const member = teamMembers[i];
+  //template literal per sovrascrivere html
   const memberInfoHTMLString = ` <div class="card">
                               <img src="${member.foto}" alt="">
                               <h2>${member.nome}</h2>
                               <p>${member.ruolo}</p>
                            </div> `;
+  //inserire la stringa HTML
   teamInfoDomElement.innerHTML += memberInfoHTMLString;
 }
