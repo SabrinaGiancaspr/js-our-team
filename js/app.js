@@ -36,6 +36,10 @@ const teamMembers = [
 ] 
 console.log(teamMembers)
 //- aggiungere tutte le info
+for (let memberInfo in teamMembers)
+console.log(memberInfo)
+const valore = teamMembers[memberInfo]
+console.log(valore)
 //-stampare le info su console 
 //-con ciclo for in 
 //-stampare in pagina collegando il DOM 
